@@ -1,0 +1,29 @@
+.box {
+  width: 100%;
+  max-width: 800px;
+  height: 20px;
+  background-color: #616161;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 20px auto;
+  font-family: 'Graphie', sans-serif;
+  margin-left: 60px;
+
+}
+
+.box > i {
+  font-size: 20px;
+  color:white;
+}
+
+.box > input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding-left: 10px;
+  background-color: #616161;
+}

@@ -1,0 +1,122 @@
+
+#balance {
+  position: absolute;
+  top: 100px;
+  color: white;
+}
+#totalBal {
+  position: absolute;
+  top: 150px;
+  color: white;
+}
+#quan {
+  position: absolute;
+
+  color: white;
+  top: 180px;
+}
+.btc {
+  position: absolute;
+  width: 420px;
+  height: 70px;
+  background-color: #616161;
+  top: 250px;
+  left: 500px;
+  border-radius: 30px;
+}
+.btcPic {
+  position: absolute;
+  height: 70px;
+  top: 8px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+
+}
+.eth {
+  position: absolute;
+  width: 420px;
+  height: 70px;
+  background-color: #616161;
+  top: 340px;
+  left: 500px;
+  border-radius: 30px;
+}
+.ethPic {
+  position: absolute;
+  height: 70px;
+  top: 8px;
+  left: -55px;
+  width: 180px;
+  height: 50px;
+
+}
+.link {
+  position: absolute;
+  width: 420px;
+  height: 70px;
+  background-color: #616161;
+  top: 430px;
+  left: 500px;
+  border-radius: 30px;
+}
+.linkPic {
+  position: absolute;
+  height: 70px;
+  top: 8px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+
+}
+.xrp {
+  position: absolute;
+  width: 420px;
+  height: 70px;
+  background-color: #616161;
+  top: 520px;
+  left: 500px;
+  border-radius: 30px;
+}
+.xrpPic {
+  position: absolute;
+  height: 70px;
+  top: 8px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+
+}
+.atom {
+  position: absolute;
+  width: 420px;
+  height: 70px;
+  background-color: #616161;
+  top: 610px;
+  left: 500px;
+  border-radius: 30px;
+}
+.atomPic {
+  position: absolute;
+  height: 70px;
+  top: 8px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+
+}
+
+.bbb {
+  position: absolute;
+  top: 20px;
+  left: 70px;
+  font-size: 30px;
+
+
+}
+.all {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

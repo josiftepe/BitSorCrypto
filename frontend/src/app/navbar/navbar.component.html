@@ -1,0 +1,32 @@
+<mat-toolbar class="toolbar">
+  <span>
+    <img src="assets/trans.png" width="65" height="65" class="logo">
+  </span>
+  <div class="spacer">
+    <button mat-flat-button color="blue" class="btn1" routerLink="/dashboard">Dashboard</button>
+    <button mat-flat-button color="blue" (click)="tradeFunc()">Trading</button>
+    <button mat-flat-button color="blue" routerLink="/market">Market</button>
+    <button mat-flat-button color="blue" (click)="portofolionFunc() ">Portofolio </button>
+
+  </div>
+  <div class="login" >
+
+    <div *ngIf="loggedIn">
+    <button  id="userBtn" disabled="true">{{ user!!.email }}</button>
+  </div>
+    <div *ngIf="!loggedIn">
+    <button mat-flat-button color="blue" class="loginBtn" routerLink="/login">Sign in</button>
+    </div>
+    <div *ngIf="loggedIn">
+      <button mat-button class="primary" disabled="true" class="timeBtn">{{ dateTime | date: 'mediumDate' }}</button>
+
+    </div>
+    <div *ngIf="loggedIn">
+      <button mat-flat-button color="blue" class="loginBtn" (click)="logOut()">Sign out</button>
+
+    </div>
+    <div *ngIf="!loggedIn">
+      <button mat-flat-button color="blue" class="registerBtn" routerLink="/register">Register</button>
+     </div>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,67 @@
+
+.div-class {
+  display: flex;
+
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+
+.cards {
+  margin: 10px;
+  width: 232px;
+  height: 232px;
+  flex-direction: column;
+
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header-image {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+
+.eth-image {
+  height: 30px;
+  width: 80px;
+  margin-left: -20px;
+}
+
+.text {
+  color: white;
+  font-family: 'Graphie', sans-serif;
+}
+canvas {
+  width: 100px;
+  height: 200px;
+}
+
+.tradingview-widget-container {
+width: 100px;
+height: 100px;
+}
+#btcChart {
+    width: 232px;
+    height: 180px;
+    position: absolute;
+    top: 50px;
+
+}
+
+#ethChart {
+  width: 232px;
+  height: 180px;
+  position: absolute;
+  top: 50px;
+
+}
+#linkChart {
+  width: 232px;
+  height: 180px;
+  position: absolute;
+  top: 50px;
+}

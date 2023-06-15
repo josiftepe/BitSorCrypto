@@ -1,0 +1,22 @@
+<mat-toolbar class="toolbar">
+  <span>
+    <img src="assets/trans.png" width="65" height="65" class="logo">
+  </span>
+  <div class="spacer">
+    <button mat-flat-button color="blue" class="btn1" routerLink="/dashboard">Dashboard</button>
+    <button mat-flat-button color="blue" routerLink="/trade">Trading</button>
+    <button mat-flat-button color="blue">Market</button>
+    <button mat-flat-button color="blue" routerLink="/portofolio">Portofolio </button>
+
+  </div>
+  <div class="login" >
+    <button mat-button class="primary" disabled="true" class="timeBtn">{{ dateTime | date: 'mediumDate' }}</button>
+
+
+    <div >
+      <button mat-flat-button color="blue" class="loginBtn" (click)="logOut()">Sign out</button>
+
+    </div>
+
+  </div>
+</mat-toolbar>

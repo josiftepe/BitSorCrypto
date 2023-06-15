@@ -1,0 +1,22 @@
+<app-trade></app-trade>
+<div class="text"></div>
+<h1 id="text">0% Maker fees, 0% taker fees</h1>
+<h1 id="text2">Trade with the most known crypto exchange!</h1>
+<app-user-info></app-user-info>
+<h1 id="orders">Pending orders: </h1>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of orders">
+    <td>{{ item.name }}</td>
+    <td>{{ item.price }}</td>
+
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'ngx-toastr/toastr';
+
+html, body { height: 100%; }
+body { margin: 0; background-color: #131519;}
+* {
+  font-family: 'Graphie', sans-serif;
+;
+}

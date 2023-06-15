@@ -1,0 +1,174 @@
+/* Default styles */
+.toolbar {
+  height: 70px;
+  display: flex;
+  background-color: #131519;
+}
+
+.spacer {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  color: white;
+  font-family: 'Graphie', sans-serif;
+}
+.login {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#icon {
+  position: absolute;
+  top: 22px;
+  right: 2px;
+}
+
+.ye {
+  background-color: #F3EF52;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-family: 'Graphie', sans-serif;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+}
+
+.bnt1 {
+  background-color: #F3EF52;
+}
+
+.logo {
+  margin-top: 10px;
+}
+
+.loginBtn {
+  right: 20px;
+}
+
+.timeBtn {
+  right: 30px;
+}
+
+/* Media queries */
+
+/* Small screens */
+@media screen and (max-width: 576px) {
+  .toolbar {
+    height: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .spacer {
+    margin-left: 0;
+    flex-basis: 100%;
+    margin-top: 10px;
+  }
+
+  .login {
+    margin-left: 20px;
+  }
+
+  #icon {
+    top: 14px;
+    right: 10px;
+  }
+
+  .ye {
+    margin-right: 5px;
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .loginBtn {
+    right: 10px;
+  }
+
+  .timeBtn {
+    right: 20px;
+  }
+}
+
+/* Medium screens */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .toolbar {
+    height: 60px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .spacer {
+    margin-left: 0;
+    flex-basis: 100%;
+    margin-top: 10px;
+  }
+
+  .login {
+    margin-left: 30px;
+  }
+
+  #icon {
+    top: 18px;
+    right: 10px;
+  }
+
+  .ye {
+    margin-right: 5px;
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .loginBtn {
+    right: 15px;
+  }
+
+  .timeBtn {
+    right: 25px;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 768px) {
+  .toolbar {
+    height: 70px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .spacer {
+    margin-left: auto;
+    flex-basis: auto;
+    margin-top: 0;
+  }
+
+  .login {
+    margin-left: 50px;
+  }
+
+  #icon {
+    top: 22px;
+    right: 2px;
+  }
+
+  .ye {
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 5px 15px;
+  }
+
+  .loginBtn {
+    right: 20px;
+  }
+
+  .timeBtn {
+    right: 30px;
+  }
+}

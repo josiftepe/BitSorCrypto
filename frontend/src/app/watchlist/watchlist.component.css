@@ -1,0 +1,108 @@
+.btc {
+  position: absolute;
+  width: 420px;
+  height: 70px;
+  background-color: #616161;
+  top: 430px;
+  left: 550px;
+  border-radius: 30px;
+}
+.btcPic {
+  position: absolute;
+  height: 70px;
+  top: 8px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+
+}
+#btcPrice {
+  color: white;
+  position: absolute;
+  left: 100px;
+}
+.eth {
+  position: absolute;
+  width: 420px;
+  height: 70px;
+  background-color: #616161;
+  top: 510px;
+  left: 550px;
+  border-radius: 30px;
+}
+.ethPic {
+  position: absolute;
+  width: 180px;
+  height: 70px;
+  top: 0px;
+  left: -55px;
+}
+#ethPrice {
+  color: white;
+  position: absolute;
+  left: 100px;
+}
+.link {
+  position: absolute;
+  width: 420px;
+  height: 70px;
+  background-color: #616161;
+  top: 590px;
+  left: 550px;
+  border-radius: 30px;
+}
+.linkPic {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 8px;
+  left: 10px;
+}
+#linkPrice {
+  color: white;
+  position: absolute;
+  left: 100px;
+}
+.xrp {
+  position: absolute;
+  width: 420px;
+  height: 70px;
+  background-color: #616161;
+  top: 670px;
+  left: 550px;
+  border-radius: 30px;
+}
+.xrpPic {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 8px;
+  left: 10px;
+}
+#xrpPrice {
+  color: white;
+  position: absolute;
+  left: 100px;
+}
+.atom {
+  position: absolute;
+  width: 420px;
+  height: 70px;
+  background-color: #616161;
+  top: 750px;
+  left: 550px;
+  border-radius: 30px;
+}
+.atomPic {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 8px;
+  left: 10px;
+}
+
+#atomPrice {
+  color: white;
+  position: absolute;
+  left: 100px;
+}

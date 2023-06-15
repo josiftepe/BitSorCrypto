@@ -1,0 +1,110 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: 'Graphie', sans-serif;
+
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: red;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.btn-link {
+  margin-top: 1rem;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  color: #007bff;
+}
+
+.login-button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries */
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 2rem;
+  }
+}
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+  color: #fff;
+}
+
+.btn-primary:focus, .btn-primary:active {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+.btn-link {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-link:hover {
+  color: #0056b3;
+}

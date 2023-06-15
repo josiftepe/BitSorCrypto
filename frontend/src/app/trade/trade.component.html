@@ -1,0 +1,59 @@
+<div class="trade-container">
+  <div class="title">
+    <h1 id = "t1">Make a trade</h1>
+  </div>
+  <div class="buttons">
+
+    <button type="button" class="buy" (click)="buttonClicked('buy')" [ngClass]="{'btnBuy' : btnGreenClicked}" > <i class="fa-sharp fa-solid fa-circle-down"></i> Buy</button>
+    <button type="button" class="sell" (click)="buttonClicked('sell')" [ngClass]="{'btnSell' : btnRedClicked}"> <i class="fa-solid fa-circle-up"></i> Sell</button>
+
+  </div>
+
+  <h2 id="coinname">Coin name: </h2>
+  <div class="dropdown" [ngClass]="{'active': isDropdownActive}" (click)="toggleDropdown()">
+    <input type="text" class="textBox" placeholder="Select coin:" readonly [(ngModel)]="coinSelected">
+    <div class="option">
+      <div (click)="show('Bitcoin')"> <img src="assets/btc.png" width="30" height="50" id="btc"> BTC</div>
+      <div (click)="show('Ethereum')"> <img src="assets/ethtradeicon.png" width="30" height="50" id="eth"> ETH</div>
+      <div (click)="show('Chainlink')"> <img src="assets/link.png" width="30" height="50" id="link"> LINK</div>
+      <div (click)="show('XRP')">  <img src="assets/xrp.png" width="30" height="50" id="xrp"> XRP</div>
+      <div (click)="show('Atom')">  <img src="assets/atom.png" width="30" height="50" id="atom"> ATOM </div>
+    </div>
+  </div>
+  <div class="order-type">
+    <button class="market-buy" (click)="setOrderType('market')">Market</button>
+    <button class="limit-buy" (click)="setOrderType('limit')">Limit</button>
+
+  <div *ngIf="selectedOrder == 'limit'">
+<input class="priceBox" [(ngModel)]="priceOfOrder" placeholder="Enter price...">
+  </div>
+    <div *ngIf="selectedOrder == 'market'">
+      <input class="priceBox" [(ngModel)]="priceOfOrder" placeholder="Market price">
+    </div>
+  </div>
+  <div *ngIf="btnGreen">
+    <h2 id="quantityText">How much? </h2>
+    <div class="quantity">
+      <input type="text" class="quantity2TextBox" placeholder="0.0" [(ngModel)]="quantityTextBox">
+      <h2 id="usd">USD</h2>
+
+      <button class="usdButton15" (click)="changeQuantityBox('100')">100 $</button>
+      <button class="usdButton150" (click)="changeQuantityBox('1000')">1000 $</button>
+      <button class="usdButton1500" (click)="changeQuantityBox('10000')">10000 $</button>
+
+    </div>
+  </div>
+  <div *ngIf="btnRed">
+    <h2 id="quan">Quantity</h2>
+
+    <input type="text" class="quantity2TextBox" placeholder="0.0" [(ngModel)]="quantityTextBox">
+
+    <button class="usdButton15C" (click)="changeQuantityBox('100')">10 {{cryptoTextBox}}</button>
+    <button class="usdButton150C" (click)="changeQuantityBox('1000')">100 {{cryptoTextBox}}</button>
+    <button class="usdButton1500C" (click)="changeQuantityBox('10000')">1000 {{cryptoTextBox}}</button>
+  <h2 id="crypto">{{cryptoTextBox}}</h2>
+  </div>
+  <div class="buttonConfirm">
+    <button class="confirm" (click)="getPrice()">  Confirm <i class="fa-regular fa-circle-check"></i> </button>
+  </div>
+</div>

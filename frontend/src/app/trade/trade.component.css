@@ -1,0 +1,314 @@
+.trade-container {
+  position: absolute;
+  width: 370px;
+  height: 713px;
+  left: 1009px;
+  top: 70px;
+
+  background: #F3EF52;
+  border-radius: 20px;
+
+}
+.title {
+  font-family: 'Graphie', sans-serif;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+#t1 {
+  font-family: 'Graphie', sans-serif;
+  font-size: 30px;
+
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buy {
+  font-family: 'Graphie', sans-serif;
+  font-size: 25px;
+  border-radius: 30px;
+  outline: none;
+  border: solid;
+  background: transparent;
+  width: 150px;
+  height: 60px;
+  transition: 0.5s;
+}
+.sell {
+  margin-left: 10px;
+  font-family: 'Graphie', sans-serif;
+  font-size: 25px;
+  border-radius: 30px;
+  outline: none;
+  border: solid;
+  background: transparent;
+  width: 150px;
+  height: 60px;
+  transition: 0.5s;
+
+
+}
+
+.buy:hover {
+  background-color: #82CD47;
+
+}
+
+.sell:hover {
+  background-color: #F94C66;
+}
+
+#btc {
+  display: inline-block;
+}
+#eth {
+  display: inline-block;
+}
+#link {
+  display: inline-block;
+
+}
+#xrp {
+  display: inline-block;
+
+}
+#atom {
+  display: inline-block;
+
+}
+.dropdown  {
+  font-size: 25px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 70px;
+  margin-left: 35px;
+  width: 300px;
+  height: 50px;
+  font-family: 'Graphie', sans-serif;
+}
+.dropdown::before {
+  content: '';
+  position: absolute;
+  align-self: center;
+  justify-content: center;
+  right: 20px;
+  top: 10px;
+  z-index: 10000;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #FFF;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+  pointer-events: none;
+}
+.dropdown .textBox {
+  /*position: ;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  color: black;
+
+}
+.dropdown .option {
+  position: absolute;
+  top: 55px;
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: none;
+}
+.dropdown.active {
+  display: block;
+  z-index: 10;
+}
+.active .option {
+  display: block;
+}
+.dropdown .option div {
+  padding: 12px 30px;
+  cursor: pointer;
+}
+.dropdown .option div:hover {
+  background: deepskyblue;
+  color: black;
+}
+
+#coinname {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+#quantityText {
+  position: absolute;
+  top: 410px;
+  left: 20px;
+}
+.quantityTextBox {
+  position: absolute;
+  top: 410px;
+  width: 350px;
+  height: 50px;
+  font-size: 25px;
+  left: 20px
+}
+.quantity2TextBox {
+  position: absolute;
+  top: 470px;
+  left: 20px;
+  width: 330px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 25px;
+
+}
+#usd {
+  position: absolute;
+  top: 480px;
+  left: 300px;
+}
+#crypto {
+
+  position: absolute;
+  top: 480px;
+  left: 300px;
+
+}
+.usdButton15 {
+  position: absolute;
+  top: 550px;
+  background: black;
+  color: white;
+  border-radius: 30px;
+  width: 80px;
+  height: 40px;
+  left: 50px
+}
+.usdButton150 {
+  position: absolute;
+  top: 550px;
+  background: black;
+  color: white;
+  border-radius: 30px;
+  width: 80px;
+  height: 40px;
+  left: 145px
+}
+.usdButton1500 {
+  position: absolute;
+  top: 550px;
+  background: black;
+  color: white;
+  border-radius: 30px;
+  width: 80px;
+  height: 40px;
+  left: 240px
+}
+.usdButton15C {
+  position: absolute;
+  top: 550px;
+  background: black;
+  color: white;
+  border-radius: 30px;
+  width: 80px;
+  height: 40px;
+  left: 50px
+}
+.usdButton150C {
+  position: absolute;
+  top: 550px;
+  background: black;
+  color: white;
+  border-radius: 30px;
+  width: 80px;
+  height: 40px;
+  left: 145px}
+.usdButton1500C {
+  position: absolute;
+  top: 550px;
+  background: black;
+  color: white;
+  border-radius: 30px;
+  width: 80px;
+  height: 40px;
+  left: 240px
+}
+
+.buttons .btnBuy {
+  background-color: #82CD47;
+}
+.buttons .btnSell {
+  background-color: #F94C66;
+}
+#quan {
+  position: absolute;
+  top: 410px;
+  left: 20px;
+}
+.confirm {
+  position: absolute;
+  top: 600px;
+  width: 200px;
+  height: 70px;
+  left: 80px;
+  border-radius: 30px;
+  border: solid;
+
+  background-color: #F3EF52;
+  color: black;
+  font-size: 25px;
+  transition: 0.5s;
+}
+.confirm:hover {
+  background-color: aqua;
+}
+.market-buy {
+  position: absolute;
+  left: 50px;
+  top: 260px;
+  height: 40px;
+  background-color: #d8560b;
+  border-radius: 30px;
+  width: 100px;
+  font-size: 20px;
+}
+.limit-buy {
+  position: absolute;
+  left: 180px;
+  font-size: 20px;
+
+  height: 40px;
+  top: 260px;
+
+  background-color: #6bbb20;
+  border-radius: 30px;
+  width: 100px;
+}
+.priceBox {
+  position: absolute;
+  width: 330px;
+  height: 50px;
+  border-radius: 30px;
+  top: 330px;
+  color:black;
+  font-size: 25px;
+  left: 20px;
+}
+* {
+
+  font-family: 'Graphie', sans-serif;
+
+}
